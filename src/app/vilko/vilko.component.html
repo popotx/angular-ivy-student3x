@@ -1,0 +1,32 @@
+<div class="logout" (click)="logout()">
+  <a href="login" class="button1">LOGOUT</a>
+</div>
+<h1>student managment</h1>
+<table class="tabulka" style="width:40%">
+  <tr>
+    <th>Meno</th>
+    <th>Priezvisko</th>
+    <th>Datum Narodenia</th>
+    <th>Pohlavie</th>
+    <th>Trieda</th>
+  </tr>
+  <tr *ngFor="let student of this.students">
+    <td>{{ student.name }}</td>
+    <td>{{ student.lastname }}</td>
+    <td>{{ student.date }}</td>
+    <td>{{ student.gender }}</td>
+    <td>{{ student.classko }}</td>
+
+    <td>
+      <button (click)="edit(this.student)">edit</button>
+    </td>
+    <td>
+      <button (click)="delete(this.student)">delete</button>
+    </td>
+    <td>
+      <button (click)="details(this.student)">details</button>
+    </td>
+  </tr>
+</table>
+
+<div class="more"><a href="more" class="button1">create</a></div>

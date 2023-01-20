@@ -1,0 +1,64 @@
+<div class="nugeta">
+  <form (submit)="editStudent(name.value,lastname.value,classko.value,age.value,date.value,spec.value,gender.value,average.value,disabled.value,awards.value)">
+  <p>
+    <label>First name: <input name="firstName"[value]="student.name" #name required /></label>
+    <label class="lastname">Last name: <input name="lastName"[value]="student.lastname" #lastname required/></label>
+  </p>
+  <div class="class">
+    <label for="trieda"  >class: </label>
+    <select id="trieda"[value]="student.classko" #classko>
+    <option value="1a">1A</option>
+    <option value="1b">1B</option>
+    <option value="1c">1C</option>
+    <option value="1d">1D</option>
+    <option value="2a">2A</option>
+    <option value="2b">2B</option>
+    <option value="2c">2C</option>
+    <option value="2d">2D</option>
+    <option value="3a">3A</option>
+    <option value="3b">3B</option>
+    <option value="3c">3C</option>
+    <option value="3d">3D</option>
+    <option value="4a">4A</option>
+    <option value="4b">4B</option>
+    <option value="4c">4C</option>
+    <option value="4d">4D</option>
+    </select>
+  
+  <p><label>age: <input type="neznama"[value]="student.age" required #age></label></p>
+  <p><label>Date of Birth: <input type="date" name="birthDate"[value]="student.date"#date></label></p>
+  
+  
+  <div class="specialezacion">
+    <label for="specia">specialezacion: </label>
+    <select id="specia"[value]="student.spec"#spec>
+    <option value="ai">AI</option>
+    <option value="inteligent technologies">inteligent technologies</option>
+    <option value="programing">programing</option>
+    <option value="network technologies">network technologies</option>
+    <option value="energetika">energetika</option>
+    <option value="electricity">electricity</option>
+    </select><br><br>
+  
+  <label>gender: </label>
+  <select [value]="student.gender"#gender>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+  </select>
+  
+  <p><label>average: <input type="number" #average required [value]="student.average" min="1" max="5"></label></p>
+  
+  <label>disabled: 
+    <select id="trieda" name="disabled"  #disabled >
+    <option value="disabled">disabled</option>
+    <option value="undisabled">undisabled</option>
+    </select>
+    </label>
+    
+      <p><label>awards :<br/><textarea name="address" #awards cols="80"rows="3"[value]="student.awards"></textarea></label></p>
+  </div>
+  </div>
+  <div class="create_done"><input type="submit" class="button2" value="save"></div>
+  </form>
+  
+  

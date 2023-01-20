@@ -1,0 +1,32 @@
+<table class="tabulka"style="width:60%">
+  <tr>
+    <th>Meno</th>
+    <th>Priezvisko</th>
+    <th>trieda</th>
+    <th>vek</th>
+    <th>datum narodenia</th>
+    <th>odbor</th>
+    <th>pohlavie</th>
+    <th>priemer</th>
+    <th>postihnutie</th>
+    <th>ocenenia</th>
+    <th>datum</th>
+  </tr>
+  <tr>
+    <td>{{ student.name }}</td>
+    <td>{{ student.lastname }}</td>
+    <td>{{ student.classko }}</td>
+    <td>{{ student.age }}</td>
+    <td>{{ student.date }}</td>
+    <td>{{ student.spec }}</td>
+    <td>{{ student.gender }}</td>
+    <td>{{ student.average }}</td>
+    <td>{{ student.disabled }}</td>
+    <td>{{ student.awards }}</td>
+    <td>{{ student.lastedit }}</td>
+  </tr>
+</table>
+
+<br>
+<br>
+<button (click)="back()">back</button>

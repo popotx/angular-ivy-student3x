@@ -1,0 +1,54 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+style{
+  background-color: #000000;
+}
+a,tr{
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+a.button1,button{
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  text-align:center;
+  transition: all 0.2s;
+  
+  }
+  a.button1:hover,button:hover{
+  color:#000000;
+  background-color:#FFFFFF;
+  }
+  
+  @media all and (max-width:30em){
+  a.button1,button{
+  display:block;
+  margin:0.4em auto;
+  }
+}
+.logout{
+  text-align: right;
+}
+h1{
+  color: white;
+  text-align: center;
+}
+.more{
+  padding-top: 20%;
+  text-align: center;
+}
+.tabulka{
+  text-align: center;
+  margin: auto;
+}
+
